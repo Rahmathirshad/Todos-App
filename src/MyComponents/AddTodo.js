@@ -8,7 +8,7 @@ export const AddTodo = (props) => {
   const submit = (e) => {
     e.preventDefault();
     if (!title || !desc) {
-      alert("Title or Desc cannot be eamty");
+      alert("Title or Desc cannot be empty");
     }
     else{
       props.addTodo(title, desc);
